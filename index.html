@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web App:Social Media - Internship</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <img src="photo/Hakimi2.png" class="logo">
+            <ul>
+                <li><img src="images/notification.png"></li>
+                <li><img src="images/inbox.png"></li>
+                <li><img src="images/video.png"></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+
+            <div class="search-box">
+                <img src="images/search.png" />
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="photo/profile-pic.jpg">
+            </div>
+
+        </div>
+<!------------settings-menu------------------------------>
+        <div class="settings-menu">
+
+            <div id="dark-btn" >
+                <span></span>
+            </div>
+
+
+
+
+
+
+
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="photo/profile-pic.jpg">
+                    <div>
+                        <p>Hakimi Saad</p>
+                        <a href="#">See your profile</a>
+                    </div>
+
+                </div>
+                <hr />
+                <div class="user-profile">
+                    <img src="images/feedback.png">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve the new design</a>
+                    </div>
+
+                </div>
+                <hr />
+
+                <div class="settings-links">
+                    <img src="images/setting.png" class="settings-icon" />
+                    <a href="#">Settings & Privacy <img src="images/arrow.png" width="10px" /></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/help.png" class="settings-icon" />
+                    <a href="#">Help & Support <img src="images/arrow.png" width="10px" /></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/display.png" class="settings-icon" />
+                    <a href="#">Display & Accessibility <img src="images/arrow.png" width="10px" /></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/logout.png" class="settings-icon" />
+                    <a href="#">Logout <img src="images/arrow.png" width="10px" /></a>
+                </div>
+
+            </div>
+            
+            
+        </div>
+
+    </nav>
+
+    <div class="container">
+    <!--------left-sidebar------------------------------>
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="images/news.png"> Latest News</a>
+                <a href="#"><img src="images/friends.png"> Friends</a>
+                <a href="#"><img src="images/group.png"> Group</a>
+                <a href="#"><img src="images/marketplace.png"> Marketplace</a>
+                <a href="#"><img src="images/watch.png"> Watch</a>
+                <a href="#">See More</a>
+            </div>
+
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="photo/efichain3.png"> Efichain Solutions Sdn Bhd</a>
+                <a href="#"><img src="images/shortcut-2.png"> Web Design Course</a>
+                <a href="#"><img src="images/shortcut-3.png"> Full Stack Development</a>
+                <a href="#"><img src="images/shortcut-4.png"> Software Quality Engineer</a>
+            </div>
+        </div>
+    <!--------main-content------------------------>
+        <div class="main-content">
+
+            <div class="story-gallery">
+
+                <div class="story story1">
+                    <img src="images/upload.png" />
+                    <p>Post Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="images/member-1.png" />
+                    <p>Alison</p>
+                </div>
+                <div class="story story3">
+                    <img src="images/member-2.png" />
+                    <p>Jackson</p>
+                </div>
+                <div class="story story4">
+                    <img src="images/member-3.png" />
+                    <p>Samona</p>
+                </div>
+                <div class="story story5">
+                    <img src="images/member-4.png" />
+                    <p>John Doe</p>
+                </div>
+
+            </div>
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="photo/profile-pic.jpg">
+                    <div>
+                        <p>Hakimi Saad</p>
+                        <small>Public <i class="fa fa-sort-down" style="font-size:18px"></i></small>
+                    </div>
+
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's on your mind, John?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="images/live-video.png"> Live Video</a>
+                        <a href="#"><img src="images/photo.png"> Photo/Video</a>
+                        <a href="#"><img src="images/feeling.png"> Feling/Activity</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="post-container">
+
+                <div class="post-row">
+
+                    <div class="user-profile">
+                        <img src="photo/profile-pic.jpg" alt="Avatar" />
+                        <div>
+                            <p>Hakimi Saad</p>
+                            <span> June 24 2022, 11:24 a.m. </span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa fa-ellipsis-v" style="font-size:24px"></i></a>
+                </div>
+
+
+                <p class="post-text">
+                    Back to Daily Meeting after aa successful meeting with client&#128526; <span>@HakimiSaad</span> As usual at 10:30 a.m. we have meeting to update our task and progress <a href="#">#cannotSkipTask#cannotlazy</a>
+                    <a href="#">#QA#EfiChainSolution</a>
+                </p>
+                <img src="photo/Daily-Meeting.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png"> 677m</div>
+                        <div><img src="images/comments.png"> 199m</div>
+                        <div><img src="images/share.png"> 136m</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="photo/profile-pic.jpg"><i class="fa fa-sort-down"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="post-container">
+
+                <div class="post-row">
+
+                    <div class="user-profile">
+                        <img src="photo/profile-pic.jpg" alt="Avatar" />
+                        <div>
+                            <p>Hakimi Saad</p>
+                            <span> June 24 2022, 11:24 a.m. </span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa fa-ellipsis-v" style="font-size:24px"></i></a>
+                </div>
+
+
+                <p class="post-text">
+                    Shocking news&#128561; <span>@HakimiSaad</span> the big boss choose me to present the new features for the big meeting with client <a href="#">#cannotSkipTask#cannotlazy</a>
+                    <a href="#">#QA#EfiChainSolution</a>
+                </p>
+                <img src="photo/demo2.jpg" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png"> 677m</div>
+                        <div><img src="images/comments.png"> 199m</div>
+                        <div><img src="images/share.png"> 136m</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="photo/profile-pic.jpg"><i class="fa fa-sort-down"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="post-container">
+
+                <div class="post-row">
+
+                    <div class="user-profile">
+                        <img src="photo/profile-pic.jpg" />
+                        <div>
+                            <p>Hakimi Saad</p>
+                            <span> June 24 2021, 13:40 pm </span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa fa-ellipsis-v" style="font-size:24px"></i></a>
+                </div>
+
+
+                <p class="post-text">
+                    4th meeting on 4th day &#128531;>@HakimiSaad</span> Discusing on demonstration <a href="#">#help</a>
+                    <a href="#">#SoftwareQA#EfiChainSolution</a>
+                </p>
+                <img src="photo/cond4.jpg" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png"> 457m</div>
+                        <div><img src="images/comments.png"> 452m</div>
+                        <div><img src="images/share.png"> 208m</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="photo/profile-pic.jpg"><i class="fa fa-sort-down"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="post-container">
+
+                <div class="post-row">
+
+                    <div class="user-profile">
+                        <img src="photo/profile-pic.jpg" />
+                        <div>
+                            <p>Hakimi Saad</p>
+                            <span> June 24 2021, 13:40 pm </span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa fa-ellipsis-v" style="font-size:24px"></i></a>
+                </div>
+
+
+                <p class="post-text">
+                    3rd meeting on 3rd day &#128531;>@HakimiSaad</span> hshshshhs...too tired now<a href="#">#help</a>
+                    <a href="#">#SoftwareQA#EfiChainSolution</a>
+                </p>
+                <img src="photo/cond4.jpg" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png"> 457m</div>
+                        <div><img src="images/comments.png"> 452m</div>
+                        <div><img src="images/share.png"> 208m</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="photo/profile-pic.jpg"><i class="fa fa-sort-down"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="post-container">
+
+                <div class="post-row">
+
+                    <div class="user-profile">
+                        <img src="photo/profile-pic.jpg" />
+                        <div>
+                            <p>Hakimi Saad</p>
+                            <span> June 24 2021, 13:40 pm </span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa fa-ellipsis-v" style="font-size:24px"></i></a>
+                </div>
+
+
+                <p class="post-text">
+                    2nd meeting on 2nd day &#128534;>@HakimiSaad</span> still meeting with the preparation for presentation<a href="#">#help</a>
+                    <a href="#">#SoftwareQA#EfiChainSolution</a>
+                </p>
+                <img src="photo/condi1.jpg" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png"> 564m</div>
+                        <div><img src="images/comments.png"> 425m</div>
+                        <div><img src="images/share.png"> 224m</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="photo/profile-pic.jpg"><i class="fa fa-sort-down"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="post-container">
+
+                <div class="post-row">
+
+                    <div class="user-profile">
+                        <img src="photo/profile-pic.jpg" />
+                        <div>
+                            <p>Hakimi Saad</p>
+                            <span> June 24 2021, 13:40 pm </span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa fa-ellipsis-v" style="font-size:24px"></i></a>
+                </div>
+
+
+                <p class="post-text">
+                    1st time facing a very long meeting &#128534;>@HakimiSaad</span> meeting almost 3 hours to discuse new features requested from client<a href="#">#help</a>
+                    <a href="#">#SoftwareQA#EfiChainSolution</a>
+                </p>
+                <img src="photo/condi3.jpg" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png"> 87m</div>
+                        <div><img src="images/comments.png"> 45m</div>
+                        <div><img src="images/share.png"> 20m</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="photo/profile-pic.jpg"><i class="fa fa-sort-down"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="post-container">
+
+                <div class="post-row">
+
+                    <div class="user-profile">
+                        <img src="photo/profile-pic.jpg" />
+                        <div>
+                            <p>Hakimi Saad</p>
+                            <span> June 24 2021, 13:40 pm </span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa fa-ellipsis-v" style="font-size:24px"></i></a>
+                </div>
+
+
+                <p class="post-text">
+                    Meeting with Senior of QA engineer &#128526;>@HakimiSaad</span> discusing on how to testing and assignment of duties<a href="#">#help</a>
+                    <a href="#">#SoftwareQA#EfiChainSolution</a>
+                </p>
+                <img src="photo/cond2.jpg" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png"> 127m</div>
+                        <div><img src="images/comments.png"> 455m</div>
+                        <div><img src="images/share.png"> 26m</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="photo/profile-pic.jpg"><i class="fa fa-sort-down"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="post-container">
+
+                <div class="post-row">
+
+                    <div class="user-profile">
+                        <img src="photo/profile-pic.jpg" />
+                        <div>
+                            <p>Hakimi Saad</p>
+                            <span> June 24 2021, 13:40 pm </span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa fa-ellipsis-v" style="font-size:24px"></i></a>
+                </div>
+
+
+                <p class="post-text">
+                    Meeting.. <span>@Hakimi Saad</span> Shocking meeting today after a shocking meeting after daily meeting &#128530;<a href="#">#TooManyMeetings</a>
+                    <a href="#">#QA#EfiChainSolution</a>
+                </p>
+                <img src="photo/Meeting3.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png"> 996m</div>
+                        <div><img src="images/comments.png"> 578m</div>
+                        <div><img src="images/share.png"> 346m</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="photo/profile-pic.jpg"><i class="fa fa-sort-down"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="post-container">
+
+                <div class="post-row">
+
+                    <div class="user-profile">
+                        <img src="photo/profile-pic.jpg" alt="Avatar" />
+                        <div>
+                            <p>Hakimi Saad</p>
+                            <span> June 24 2022, 11:24 a.m. </span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa fa-ellipsis-v" style="font-size:24px"></i></a>
+                </div>
+
+
+                <p class="post-text">
+                    Daily Meeting <span>@HakimiSaad</span> As usual at 10:30 a.m. we have meeting to update our task and progress <a href="#">#cannotSkipTask#cannotlazy</a>
+                    <a href="#">#QA#EfiChainSolution</a>
+                </p>
+                <img src="photo/Daily-Meeting.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png"> 677m</div>
+                        <div><img src="images/comments.png"> 199m</div>
+                        <div><img src="images/share.png"> 136</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="photo/profile-pic.jpg"><i class="fa fa-sort-down"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="post-container">
+
+                <div class="post-row">
+
+                    <div class="user-profile">
+                        <img src="photo/profile-pic.jpg" />
+                        <div>
+                            <p>Hakimi Saad</p>
+                            <span> June 24 2021, 13:40 pm </span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa fa-ellipsis-v" style="font-size:24px"></i></a>
+                </div>
+
+
+                <p class="post-text">
+                    Allowance <span>@Hakimi Saad</span> got my allowance &#128525; &#128526;<a href="#">#SoftwareQualityAssurenceEngineer</a>
+                    <a href="#">#SoftwareQA#EfiChainSolution</a>
+                </p>
+                <img src="photo/al.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png"> 998m</div>
+                        <div><img src="images/comments.png"> 879m</div>
+                        <div><img src="images/share.png"> 766m</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="photo/profile-pic.jpg"><i class="fa fa-sort-down"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="post-container">
+
+                <div class="post-row">
+
+                    <div class="user-profile">
+                        <img src="photo/profile-pic.jpg" />
+                        <div>
+                            <p>Hakimi Saad</p>
+                            <span> June 24 2021, 13:40 pm </span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa fa-ellipsis-v" style="font-size:24px"></i></a>
+                </div>
+
+
+                <p class="post-text">
+                    Dinner at 5 stars hotel &#128526; <span>@Hakimi Saad</span> Thank you boss<a href="#">#BigBoss</a>
+                    <a href="#">#SoftwareQA#EfiChainSolution</a>
+                </p>
+                <img src="photo/team.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png"> 322m</div>
+                        <div><img src="images/comments.png"> 132m</div>
+                        <div><img src="images/share.png"> 134m</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="photo/profile-pic.jpg"><i class="fa fa-sort-down"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button type="button" class="load-more-btn">Load More</button>
+
+
+
+
+        </div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--------right-sidebar----------------------  -->
+        <div class="right-sidebar">
+
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+
+            <div class="event">
+
+                <div class="left-event">
+                    <h3>30</h3>
+                    <span>May</span>
+                </div>
+
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><i class="fa fa-map-marker" style="font-size:13px"></i> Efichain Solutions</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+
+            <div class="event">
+
+                <div class="left-event">
+                    <h3>31</h3>
+                    <span>May</span>
+                </div>
+
+                <div class="right-event">
+                    <h4>Business</h4>
+                    <p><i class="fa fa-map-marker" style="font-size:13px"></i> Efichain Solutions</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="photo/efichain1.jpg" class="sider-ads">
+
+            <div class="sidebar-title">
+                <h4>Conversation</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-1.png">
+                </div>
+                <p>Alison Mina</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-2.png">
+                </div>
+                <p>Blison Nike</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-3.png"> 
+                </div>
+                <p>Samona Rose</p>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+<div class="footer">
+    <p>Copyright 2022 - Internship journal of Muhammad Hakimi Bin Md Saad</p>
+</div>
+
+<script src="script.js"></script> 
+
+</body>
+
+</html>
